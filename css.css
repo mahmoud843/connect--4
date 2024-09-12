@@ -1,0 +1,35 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        #board {
+            display: grid;
+            grid-template-columns: repeat(7, 70px);
+            gap: 5px;
+        }
+        .cell {
+            width: 70px;
+            height: 70px;
+            background-color: blue;
+            border: 2px solid #333;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .cell.X {
+            background-color: red;
+        }
+        .cell.O {
+            background-color: green;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
